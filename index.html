@@ -363,6 +363,7 @@
           </div>
         </div>
         <!-- card details -->
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 m-5">
           <!-- card details-1 -->
           <div class="card border border-gray-400">
@@ -402,8 +403,8 @@
                 />
               </div>
               <a class="text-main-color" href="#"
-                ><button class="btn" onclick="my_modal_5.showModal()">
-                  details
+                ><button class="text-2xl" onclick="my_modal_5.showModal()">
+                  Details
                 </button></a
               >
             </div>
@@ -529,6 +530,56 @@
             </div>
           </div>
         </div>
+        <!-- dialog 1 -->
+        <dialog
+          id="my_modal_5"
+          class="modal modal-bottom sm:modal-middle text-center"
+        >
+          <form
+            method="dialog"
+            class="modal-box flex flex-col justify-center content-center"
+          >
+            <img src="./images/fruit7.png" alt="" />
+            <h3 class="font-bold text-3xl">Apple</h3>
+            <p class="py-4">
+              Professional employees are there for you to pick the most amazing
+              and fresh fruits.
+            </p>
+            <div class="rating flex justify-center content-center">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+            <div class="modal-action flex justify-center content-center">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn btn-outline btn-secondary">Close</button>
+              <button class="btn bg-orange-500 text-white">Buy Now</button>
+            </div>
+          </form>
+        </dialog>
         <!-- button -->
         <div class="text-center">
           <button
@@ -539,17 +590,5 @@
         </div>
       </section>
     </main>
-    <!-- 1 -->
-    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-      <form method="dialog" class="modal-box">
-        <img src="./images/fruit7.png" alt="" />
-        <h3 class="font-bold text-lg">Hello!</h3>
-        <p class="py-4">Press ESC key or click the button below to close</p>
-        <div class="modal-action">
-          <!-- if there is a button in form, it will close the modal -->
-          <button class="btn">Close</button>
-        </div>
-      </form>
-    </dialog>
   </body>
 </html>
