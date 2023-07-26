@@ -34,7 +34,7 @@
     <!-- header -->
     <header class="container mx-auto">
       <!-- nav -->
-      <nav class="bg-orange-600 rounded-full">
+      <nav class="md:bg-orange-500 rounded-full">
         <div class="flex flex-wrap items-center justify-between mx-auto p-4">
           <!-- items-2 -->
           <div
@@ -62,7 +62,7 @@
           <a href="#" class="flex items-center">
             <img src="./images/logo.png" class="h-8 mr-3" alt="Logo" />
             <span
-              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              class="self-center text-2xl font-semibold whitespace-nowrap text-black md:text-white"
               >Fruit Burst</span
             >
           </a>
@@ -146,7 +146,7 @@
             <div
               class="flex flex-col text-center justify-center content-center items-center w-9/12 mx-auto h-full text-white px-5 md:px-16"
             >
-              <h2 class="text-7xl font-extrabold">
+              <h2 class="text-5xl md:text-7xl font-extrabold">
                 Exotic tastes at your <br />
                 doorstep
               </h2>
@@ -154,12 +154,12 @@
                 Fruits and vegetables contain important vitamins, minerals and
                 plant chemicals. They also contain fibre. There are many
                 varieties of fruit and vegetables available and many ways to
-                prepare, cook and serve them. A diet high in fruit and
-                vegetables can help protect you against cancer, diabetes and
-                heart diseas
+                prepare, cook and serve them.
               </p>
-              <button class="btn btn-active bg-main-color border-0 text-white">
-                Secondary
+              <button
+                class="bg-orange-500 py-4 rounded-xl px-7 border-0 text-white text-xl"
+              >
+                Shop Now
               </button>
             </div>
           </div>
@@ -232,8 +232,10 @@
                 vegetables can help protect you against cancer, diabetes and
                 heart disease
               </p>
-              <button class="btn btn-active bg-main-color border-0 text-white">
-                Secondary
+              <button
+                class="bg-orange-500 py-4 rounded-xl px-7 border-0 text-white text-xl"
+              >
+                Shop Now
               </button>
             </div>
           </div>
@@ -326,45 +328,45 @@
       <!-- Deal of the day section -->
       <section class="my-10">
         <div
-          class="flex flex-col md:flex-row md:justify-between text-center items-center md:text-left"
+          class="flex flex-col md:flex-row md:justify-between text-center gap-4 items-center md:text-left"
         >
           <div>
             <h1 class="text-5xl font-extrabold mb-5">Deal of the day</h1>
-            <p>
+            <p class="md:w-2/3 p-3 lg:p-0">
               Contrary to popular belief, is not simply random text. It has
-              roots in a piece of classical <br />
-              Latin literature from 45 BC, making it over 2000 years old.
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
             </p>
           </div>
           <!-- cut down -->
-          <div class="text-4xl">
+          <div class="text-3xl">
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+              <div class="flex flex-col text-4xl">
+                <span class="countdown font-mono text-4xl">
                   <span style="--value: 15"></span>
                 </span>
-                days
+                <h2 class="text-3xl">days</h2>
               </div>
-              <i class="fa-solid fa-ellipsis-vertical mt-2"></i>
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+              <i class="fa-solid fa-ellipsis-vertical mt-1"></i>
+              <div class="flex flex-col text-4xl">
+                <span class="countdown font-mono text-4xl">
                   <span style="--value: 10"></span>
                 </span>
-                hours
+                <h2 class="text-3xl">hours</h2>
               </div>
-              <i class="fa-solid fa-ellipsis-vertical mt-2"></i>
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+              <i class="fa-solid fa-ellipsis-vertical mt-1"></i>
+              <div class="flex flex-col text-4xl">
+                <span class="countdown font-mono text-4xl">
                   <span style="--value: 24"></span>
                 </span>
-                min
+                <h2 class="text-3xl">min</h2>
               </div>
-              <i class="fa-solid fa-ellipsis-vertical mt-2"></i>
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+              <i class="fa-solid fa-ellipsis-vertical mt-1"></i>
+              <div class="flex flex-col text-4xl">
+                <span class="countdown font-mono text-4xl">
                   <span style="--value: 54"></span>
                 </span>
-                sec
+                <h2 class="text-3xl">sec</h2>
               </div>
             </div>
           </div>
@@ -384,7 +386,7 @@
               <div class="rating">
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-1"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
@@ -395,17 +397,17 @@
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-3"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
@@ -428,7 +430,7 @@
               <div class="rating">
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-1"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
@@ -439,17 +441,17 @@
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-3"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
@@ -472,7 +474,7 @@
               <div class="rating">
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-1"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
@@ -483,17 +485,17 @@
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-3"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
@@ -516,7 +518,7 @@
               <div class="rating">
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-1"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
@@ -527,17 +529,17 @@
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-3"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-4"
                   class="mask mask-star-2 bg-orange-400"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-5"
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
@@ -558,7 +560,9 @@
             method="dialog"
             class="modal-box flex flex-col justify-center content-center"
           >
-            <img src="./images/fruit6.png" alt="" />
+            <div class="flex items-center justify-center">
+              <img class="w-1/2" src="./images/fruit6.png" alt="" />
+            </div>
             <h3 class="font-bold text-3xl">Apple</h3>
             <p class="py-4">
               Professional employees are there for you to pick the most amazing
@@ -567,7 +571,7 @@
             <div class="rating flex justify-center content-center">
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-1"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
@@ -578,17 +582,17 @@
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-3"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-4"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-5"
                 class="mask mask-star-2 bg-orange-400"
               />
             </div>
@@ -608,7 +612,9 @@
             method="dialog"
             class="modal-box flex flex-col justify-center content-center"
           >
-            <img src="./images/fruit7.png" alt="" />
+            <div class="flex items-center justify-center">
+              <img class="w-1/2" src="./images/fruit7.png" alt="" />
+            </div>
             <h3 class="font-bold text-3xl">Orange</h3>
             <p class="py-4">
               Professional employees are there for you to pick the most amazing
@@ -617,7 +623,7 @@
             <div class="rating flex justify-center content-center">
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-1"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
@@ -628,17 +634,17 @@
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-3"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-4"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-5"
                 class="mask mask-star-2 bg-orange-400"
               />
             </div>
@@ -658,7 +664,9 @@
             method="dialog"
             class="modal-box flex flex-col justify-center content-center"
           >
-            <img src="./images/fruit8.png" alt="" />
+            <div class="flex items-center justify-center">
+              <img class="w-1/2" src="./images/fruit8.png" alt="" />
+            </div>
             <h3 class="font-bold text-3xl">Red Dragon</h3>
             <p class="py-4">
               Professional employees are there for you to pick the most amazing
@@ -667,7 +675,7 @@
             <div class="rating flex justify-center content-center">
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-1"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
@@ -678,17 +686,17 @@
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-3"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-4"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-5"
                 class="mask mask-star-2 bg-orange-400"
               />
             </div>
@@ -708,7 +716,9 @@
             method="dialog"
             class="modal-box flex flex-col justify-center content-center"
           >
-            <img src="./images/fruit9.png" alt="" />
+            <div class="flex items-center justify-center">
+              <img class="w-1/2" src="./images/fruit9.png" alt="" />
+            </div>
             <h3 class="font-bold text-3xl">Banana</h3>
             <p class="py-4">
               Professional employees are there for you to pick the most amazing
@@ -717,7 +727,7 @@
             <div class="rating flex justify-center content-center">
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-1"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
@@ -728,17 +738,17 @@
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-3"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-4"
                 class="mask mask-star-2 bg-orange-400"
               />
               <input
                 type="radio"
-                name="rating-2"
+                name="rating-5"
                 class="mask mask-star-2 bg-orange-400"
               />
             </div>
@@ -783,9 +793,15 @@
                   <h2 class="text-xl">Awlad Hossain</h2>
                   <p>Fruits Expert</p>
                   <div>
-                    <i class="fa-brands fa-facebook text-orange-500"></i>
-                    <i class="fa-brands fa-youtube text-orange-500"></i>
-                    <i class="fa-brands fa-twitter text-orange-500"></i>
+                    <i
+                      class="fa-brands fa-facebook text-orange-500 text-2xl"
+                    ></i>
+                    <i
+                      class="fa-brands fa-youtube text-orange-500 text-2xl"
+                    ></i>
+                    <i
+                      class="fa-brands fa-twitter text-orange-500 text-2xl"
+                    ></i>
                   </div>
                 </div>
                 <!-- card -->
@@ -796,9 +812,15 @@
                   <h2 class="text-xl">Safia Chowdhury</h2>
                   <p>Fruits Expert</p>
                   <div>
-                    <i class="fa-brands fa-facebook text-orange-500"></i>
-                    <i class="fa-brands fa-youtube text-orange-500"></i>
-                    <i class="fa-brands fa-twitter text-orange-500"></i>
+                    <i
+                      class="fa-brands fa-facebook text-orange-500 text-2xl"
+                    ></i>
+                    <i
+                      class="fa-brands fa-youtube text-orange-500 text-2xl"
+                    ></i>
+                    <i
+                      class="fa-brands fa-twitter text-orange-500 text-2xl"
+                    ></i>
                   </div>
                 </div>
                 <!-- card -->
@@ -809,9 +831,15 @@
                   <h2 class="text-xl">Rokib Hossain</h2>
                   <p>Fruits Expert</p>
                   <div>
-                    <i class="fa-brands fa-facebook text-orange-500"></i>
-                    <i class="fa-brands fa-youtube text-orange-500"></i>
-                    <i class="fa-brands fa-twitter text-orange-500"></i>
+                    <i
+                      class="fa-brands fa-facebook text-orange-500 text-2xl"
+                    ></i>
+                    <i
+                      class="fa-brands fa-youtube text-orange-500 text-2xl"
+                    ></i>
+                    <i
+                      class="fa-brands fa-twitter text-orange-500 text-2xl"
+                    ></i>
                   </div>
                 </div>
                 <!-- card -->
@@ -822,9 +850,15 @@
                   <h2 class="text-xl">Chaity</h2>
                   <p>Fruits Expert</p>
                   <div>
-                    <i class="fa-brands fa-facebook text-orange-500"></i>
-                    <i class="fa-brands fa-youtube text-orange-500"></i>
-                    <i class="fa-brands fa-twitter text-orange-500"></i>
+                    <i
+                      class="fa-brands fa-facebook text-orange-500 text-2xl"
+                    ></i>
+                    <i
+                      class="fa-brands fa-youtube text-orange-500 text-2xl"
+                    ></i>
+                    <i
+                      class="fa-brands fa-twitter text-orange-500 text-2xl"
+                    ></i>
                   </div>
                 </div>
               </div>
@@ -899,7 +933,7 @@
               </div>
             </div>
             <!-- card -->
-            <div class="space-y-5 order-1 lg:order-2 flex justify-center">
+            <div class="space-y-5 order-1 lg:order-2 flex justify-center px-2">
               <img src="./images/whychoose1.png" alt="" />
             </div>
             <!-- card 3 -->
