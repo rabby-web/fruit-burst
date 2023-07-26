@@ -11,6 +11,15 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/dc89de87db.js"
@@ -30,7 +39,12 @@
       };
     </script>
   </head>
-  <body>
+  <style>
+    .fonts {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+  <body class="text-fonts">
     <!-- header -->
     <header class="container mx-auto">
       <!-- nav -->
@@ -78,50 +92,51 @@
             >
               <span class="sr-only">Search</span>
             </button>
-            <div class="relative hidden md:block">
-              <div
-                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-              >
-                <span class="sr-only">Search icon</span>
-
+            <!-- search input -->
+            <div class="relative mx-auto text-gray-600 hidden md:block">
+              <input
+                class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-[50px] text-sm border-none"
+                type="search"
+                name="search"
+                placeholder="Search here"
+              />
+              <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
                 <svg
-                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  class="relative -mt-2 text-gray-600 h-4 w-4 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 56.966 56.966"
+                  style="enable-background: new 0 0 56.966 56.966"
+                  xml:space="preserve"
+                  width="512px"
+                  height="512px"
+                >
+                  <path
+                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost md:hidden">
+                <svg
+                  class="w-5 h-5"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 20 20"
+                  viewBox="0 0 17 14"
                 >
                   <path
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                class="block w-full p-2 pl-10 text-sm text-gray-900 border-0 rounded-full border-gray-300 bg-gray-50 dark:placeholder-gray-400 dark:text-white"
-                placeholder="Search hear"
-              />
-            </div>
-
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
+                    d="M1 1h15M1 7h15M1 13h15"
                   />
                 </svg>
               </label>
@@ -394,32 +409,58 @@
               <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
               <div class="border border-b-zinc-200 w-2/3"></div>
               <p>Apples</p>
-              <div class="rating">
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-10" class="rating-hidden" />
                 <input
                   type="radio"
-                  name="rating-1"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                   checked
                 />
                 <input
                   type="radio"
-                  name="rating-3"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                 />
                 <input
                   type="radio"
-                  name="rating-5"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
                 />
               </div>
               <a class="text-main-color" href="#"
@@ -438,32 +479,58 @@
               <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
               <div class="border border-b-zinc-200 w-2/3"></div>
               <p>Orange</p>
-              <div class="rating">
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-10" class="rating-hidden" />
                 <input
                   type="radio"
-                  name="rating-1"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                   checked
                 />
                 <input
                   type="radio"
-                  name="rating-3"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                 />
                 <input
                   type="radio"
-                  name="rating-5"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
                 />
               </div>
               <a class="text-main-color" href="#"
@@ -482,32 +549,58 @@
               <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
               <div class="border border-b-zinc-200 w-2/3"></div>
               <p>Red Dragon</p>
-              <div class="rating">
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-10" class="rating-hidden" />
                 <input
                   type="radio"
-                  name="rating-1"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                   checked
                 />
                 <input
                   type="radio"
-                  name="rating-3"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                 />
                 <input
                   type="radio"
-                  name="rating-5"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
                 />
               </div>
               <a class="text-main-color" href="#"
@@ -526,32 +619,58 @@
               <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
               <div class="border border-b-zinc-200 w-2/3"></div>
               <p>Banana</p>
-              <div class="rating">
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-10" class="rating-hidden" />
                 <input
                   type="radio"
-                  name="rating-1"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                   checked
                 />
                 <input
                   type="radio"
-                  name="rating-3"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
                 />
                 <input
                   type="radio"
-                  name="rating-5"
-                  class="mask mask-star-2 bg-orange-400"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-orange-400 mask mask-star-2 mask-half-2"
                 />
               </div>
               <a class="text-main-color" href="#"
@@ -579,32 +698,60 @@
               Professional employees are there for you to pick the most amazing
               and fresh fruits.
             </p>
-            <div class="rating flex justify-center content-center">
+            <div
+              class="rating rating-lg rating-half flex justify-center content-center"
+            >
+              <input type="radio" name="rating-10" class="rating-hidden" />
               <input
                 type="radio"
-                name="rating-1"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
               />
               <input
                 type="radio"
-                name="rating-2"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
                 checked
               />
               <input
                 type="radio"
-                name="rating-3"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
               />
               <input
                 type="radio"
-                name="rating-4"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
               />
               <input
                 type="radio"
-                name="rating-5"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
               />
             </div>
             <div class="modal-action flex justify-center content-center">
@@ -631,32 +778,60 @@
               Professional employees are there for you to pick the most amazing
               and fresh fruits.
             </p>
-            <div class="rating flex justify-center content-center">
+            <div
+              class="rating rating-lg rating-half flex justify-center content-center"
+            >
+              <input type="radio" name="rating-10" class="rating-hidden" />
               <input
                 type="radio"
-                name="rating-1"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
               />
               <input
                 type="radio"
-                name="rating-2"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
                 checked
               />
               <input
                 type="radio"
-                name="rating-3"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
               />
               <input
                 type="radio"
-                name="rating-4"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
               />
               <input
                 type="radio"
-                name="rating-5"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
               />
             </div>
             <div class="modal-action flex justify-center content-center">
@@ -683,32 +858,60 @@
               Professional employees are there for you to pick the most amazing
               and fresh fruits.
             </p>
-            <div class="rating flex justify-center content-center">
+            <div
+              class="rating rating-lg rating-half flex justify-center content-center"
+            >
+              <input type="radio" name="rating-10" class="rating-hidden" />
               <input
                 type="radio"
-                name="rating-1"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
               />
               <input
                 type="radio"
-                name="rating-2"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
                 checked
               />
               <input
                 type="radio"
-                name="rating-3"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
               />
               <input
                 type="radio"
-                name="rating-4"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
               />
               <input
                 type="radio"
-                name="rating-5"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
               />
             </div>
             <div class="modal-action flex justify-center content-center">
@@ -735,32 +938,60 @@
               Professional employees are there for you to pick the most amazing
               and fresh fruits.
             </p>
-            <div class="rating flex justify-center content-center">
+            <div
+              class="rating rating-lg rating-half flex justify-center content-center"
+            >
+              <input type="radio" name="rating-10" class="rating-hidden" />
               <input
                 type="radio"
-                name="rating-1"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
               />
               <input
                 type="radio"
-                name="rating-2"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
                 checked
               />
               <input
                 type="radio"
-                name="rating-3"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
               />
               <input
                 type="radio"
-                name="rating-4"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
               />
               <input
                 type="radio"
-                name="rating-5"
-                class="mask mask-star-2 bg-orange-400"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-orange-400 mask mask-star-2 mask-half-2"
               />
             </div>
             <div class="modal-action flex justify-center content-center">
@@ -903,7 +1134,9 @@
                 </div>
                 <div class="w-2/3 lg:w-full space-y-2">
                   <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
-                  <hr />
+                  <div class="flex justify-center md:justify-start">
+                    <div class="my-0 border-b border-gray-400 w-[200px]"></div>
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -919,7 +1152,9 @@
                 </div>
                 <div class="w-2/3 lg:w-full space-y-2">
                   <h1 class="text-2xl font-extrabold">Fresh is Best</h1>
-                  <hr />
+                  <div class="flex justify-center md:justify-start">
+                    <div class="my-0 border-b border-gray-400 w-[200px]"></div>
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -935,7 +1170,9 @@
                 </div>
                 <div class="w-2/3 lg:w-full space-y-2">
                   <h1 class="text-2xl font-extrabold">Gift Certificates</h1>
-                  <hr />
+                  <div class="flex justify-center md:justify-start">
+                    <div class="my-0 border-b border-gray-400 w-[200px]"></div>
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -955,7 +1192,9 @@
               >
                 <div class="w-2/3 lg:w-full space-y-2">
                   <h1 class="text-2xl font-extrabold">Integrated Supplier</h1>
-                  <hr />
+                  <div class="flex justify-center md:justify-end">
+                    <div class="my-0 border-b border-gray-400 w-[200px]"></div>
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -971,7 +1210,9 @@
               >
                 <div class="w-2/3 lg:w-full space-y-2">
                   <h1 class="text-2xl font-extrabold">Sustainable Practice</h1>
-                  <hr />
+                  <div class="flex justify-center md:justify-end">
+                    <div class="my-0 border-b border-gray-400 w-[200px]"></div>
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -987,7 +1228,9 @@
               >
                 <div class="w-2/3 lg:w-full space-y-2">
                   <h1 class="text-2xl font-extrabold">The Benefits Only</h1>
-                  <hr />
+                  <div class="flex justify-center md:justify-end">
+                    <div class="my-0 border-b border-gray-400 w-[200px]"></div>
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
